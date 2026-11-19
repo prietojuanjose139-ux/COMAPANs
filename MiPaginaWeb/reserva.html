@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva | ComaPan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="index.html">Coma<span>Pan</span></a>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="productos.html">Menú</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="reserva.html" class="active">Reserva</a>
+        <a href="galeria.html">Galería</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contactanos.html">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section class="inner-hero">
+        <p class="eyebrow">TE ESPERAMOS</p>
+        <h1>Reserva tu momento.</h1>
+        <p>Completa el formulario y envíanos tu solicitud de reserva.</p>
+    </section>
+
+    <section class="section reservation-grid">
+
+        <div class="reservation-info">
+            <h2>Un espacio para compartir.</h2>
+            <p>
+                Déjanos tus datos y la información de tu visita.
+                Nos pondremos en contacto para confirmar la disponibilidad.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+                 alt="Mesa preparada para una comida">
+        </div>
+
+        <form class="form-card" id="reservationForm">
+
+            <label for="reserveName">Nombre completo</label>
+            <input id="reserveName" name="nombre" type="text" placeholder="Tu nombre" required>
+
+            <label for="reserveEmail">Correo electrónico</label>
+            <input id="reserveEmail" name="email" type="email" placeholder="correo@ejemplo.com" required>
+
+            <label for="reservePhone">Teléfono</label>
+            <input id="reservePhone" name="telefono" type="tel" placeholder="Tu teléfono" required>
+
+            <label for="reserveDate">Fecha</label>
+            <input id="reserveDate" name="fecha" type="date" required>
+
+            <label for="reserveTime">Hora</label>
+            <input id="reserveTime" name="hora" type="time" required>
+
+            <label for="reservePeople">Número de personas</label>
+            <select id="reservePeople" name="personas" required>
+                <option value="">Selecciona</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7 o más</option>
+            </select>
+
+            <label for="reserveMessage">Mensaje (opcional)</label>
+            <textarea id="reserveMessage" name="mensaje" rows="4"
+                placeholder="Solicitud especial"></textarea>
+
+            <button class="btn" type="submit">Enviar solicitud</button>
+
+            <p id="reservationMessage" class="form-message" role="status"></p>
+
+            <small>
+                Formulario de demostración: no envía los datos a un servidor.
+            </small>
+        </form>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">Coma<span>Pan</span></a>
+    <p>Calidad, sabor y momentos para compartir.</p>
+    <p>© <span class="year"></span> ComaPan Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

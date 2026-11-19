@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos ComaPan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a class="logo" href="index.html">Coma<span>Pan</span></a>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="productos.html">Menú</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="galeria.html">Galería</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contactanos.html" class="active">Contáctanos</a>
+    </nav>
+</header>
+
+<main>
+    <section class="inner-hero">
+        <p class="eyebrow">HABLEMOS</p>
+        <h1>Estamos para ayudarte.</h1>
+        <p>Envíanos tus preguntas, comentarios o sugerencias.</p>
+    </section>
+
+    <section class="section contact-grid">
+
+        <div>
+            <h2>Conectemos.</h2>
+            <p>
+                Nos encantará saber de ti. Completa el formulario
+                y déjanos tu mensaje.
+            </p>
+
+            <div class="contact-detail">
+                <strong>Correo</strong>
+                <p>contacto@mimarca.com</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>Teléfono</strong>
+                <p>+57 300 000 0000</p>
+            </div>
+
+            <div class="contact-detail">
+                <strong>Redes sociales</strong>
+                <p>@mimarca</p>
+            </div>
+        </div>
+
+        <form class="form-card" id="contactForm">
+
+            <label for="contactName">Nombre</label>
+            <input id="contactName" name="nombre" type="text"
+                   placeholder="Tu nombre" required>
+
+            <label for="contactEmail">Correo electrónico</label>
+            <input id="contactEmail" name="email" type="email"
+                   placeholder="correo@ejemplo.com" required>
+
+            <label for="contactSubject">Asunto</label>
+            <input id="contactSubject" name="asunto" type="text"
+                   placeholder="¿Sobre qué quieres hablar?" required>
+
+            <label for="contactMessage">Mensaje</label>
+            <textarea id="contactMessage" name="mensaje" rows="5"
+                      placeholder="Escribe tu mensaje..." required></textarea>
+
+            <button class="btn" type="submit">Enviar mensaje</button>
+
+            <p id="formMessage" class="form-message" role="status"></p>
+
+            <small>
+                Formulario de demostración: no envía correos ni almacena información.
+            </small>
+        </form>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <a class="logo footer-logo" href="index.html">Coma<span>Pan</span></a>
+    <p>Calidad, sabor y momentos para compartir.</p>
+    <p>© <span class="year"></span> ComaPan Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
